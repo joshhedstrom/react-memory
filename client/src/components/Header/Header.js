@@ -3,9 +3,9 @@ import './Header.css';
 
 const Header = ()=> {
 	return(
-		<div>
+		<div className='header'>
 			<h1 className='header-title'>Memory Game</h1>
-			<p classname='header-instructions'>Instructions</p>
+			<p className='header-instructions'>Click on any picture, but make sure not to click on the same picture twice!</p>
 		</div>
 		)
 };

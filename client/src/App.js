@@ -80,7 +80,8 @@ class App extends Component {
   }
 
   handleClick = event => {
-
+    console.log('clicked')
+    this.setState({images: shuffleImages(this.state.images)})
   }
 
   render(){
@@ -89,22 +90,22 @@ class App extends Component {
         < Header />
         <Container>
           <Row>
-            < Card href={this.state.images[0].href} data-value={this.state.images[0].number} />
-            < Card href={this.state.images[1].href} data-value={this.state.images[1].number} />
-            < Card href={this.state.images[2].href} data-value={this.state.images[2].number} />
-            < Card href={this.state.images[3].href} data-value={this.state.images[3].number} />
+            < Card onClick={this.handleClick} href={this.state.images[0].href} data-value={this.state.images[0].number} />
+            < Card onClick={this.handleClick} href={this.state.images[1].href} data-value={this.state.images[1].number} />
+            < Card onClick={this.handleClick} href={this.state.images[2].href} data-value={this.state.images[2].number} />
+            < Card onClick={this.handleClick} href={this.state.images[3].href} data-value={this.state.images[3].number} />
           </Row>
           <Row>
-            < Card href={this.state.images[4].href} data-value={this.state.images[4].number} />
-            < Card href={this.state.images[5].href} data-value={this.state.images[5].number} />
-            < Card href={this.state.images[6].href} data-value={this.state.images[6].number} />
-            < Card href={this.state.images[7].href} data-value={this.state.images[7].number} />
+            < Card onClick={this.handleClick} href={this.state.images[4].href} data-value={this.state.images[4].number} />
+            < Card onClick={this.handleClick} href={this.state.images[5].href} data-value={this.state.images[5].number} />
+            < Card onClick={this.handleClick} href={this.state.images[6].href} data-value={this.state.images[6].number} />
+            < Card onClick={this.handleClick} href={this.state.images[7].href} data-value={this.state.images[7].number} />
           </Row>
           <Row>
-            < Card href={this.state.images[8].href} data-value={this.state.images[8].number} />
-            < Card href={this.state.images[9].href} data-value={this.state.images[9].number} />
-            < Card href={this.state.images[10].href} data-value={this.state.images[10].number} />
-            < Card href={this.state.images[11].href} data-value={this.state.images[11].number} />
+            < Card onClick={this.handleClick} href={this.state.images[8].href} data-value={this.state.images[8].number} />
+            < Card onClick={this.handleClick} href={this.state.images[9].href} data-value={this.state.images[9].number} />
+            < Card onClick={this.handleClick} href={this.state.images[10].href} data-value={this.state.images[10].number} />
+            < Card onClick={this.handleClick} href={this.state.images[11].href} data-value={this.state.images[11].number} />
           </Row>
         </Container>
       </div>
