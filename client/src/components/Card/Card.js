@@ -12,6 +12,7 @@ const Card = props => {
 	    data-value={props.number} 
 	    src={props.href}
 	    alt='fish'
+	    onClick={props.clickHandler}
 	    />
   	</div>
 
