@@ -2,16 +2,20 @@ import React from 'react';
 import './Card.css';
 
 const Card = props => {
+
+	return(
 	<div 
-	className="cell small-4"
+	className="cell small-3 card"
 	>
 	    <img 
-	    className="thumbnail"
+	    className="thumbnail image"
 	    data-value={props.number} 
 	    src={props.href}
-	    alt={props.alt}
+	    alt='fish'
 	    />
   	</div>
+
+		)
 };
 
 export default Card;

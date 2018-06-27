@@ -70,7 +70,7 @@ class Main extends Component {
 	state = {};
 
 	componentDidMount() {
-		loadImages()
+		// loadImages()
 	}
 
 	loadImages(){
@@ -96,13 +96,22 @@ render(){
 		<div>
 			<Container>
 				<Row>
-
+					< Card href=images[0].href />
+					< Card href=images[0].href />
+					< Card href=images[0].href />
+					< Card href=images[0].href />
 				</Row>
 				<Row>
-
+					< Card href=images[0].href />
+					< Card href=images[0].href />
+					< Card href=images[0].href />
+					< Card href=images[0].href />
 				</Row>
 				<Row>
-
+					< Card href=images[0].href />
+					< Card href=images[0].href />
+					< Card href=images[0].href />
+					< Card href=images[0].href />
 				</Row>
 			</Container>
 		</div>
