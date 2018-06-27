@@ -71,8 +71,7 @@ class App extends Component {
   state = {
     currentScore: '',
     highScore: '',
-    images: images,
-
+    images: images
   }
 
   componentDidMount() {
@@ -93,14 +92,10 @@ class App extends Component {
             < Card clickHandler={this.handleClick} href={this.state.images[1].href} data-value={this.state.images[1].number} />
             < Card clickHandler={this.handleClick} href={this.state.images[2].href} data-value={this.state.images[2].number} />
             < Card clickHandler={this.handleClick} href={this.state.images[3].href} data-value={this.state.images[3].number} />
-          </Row>
-          <Row>
             < Card clickHandler={this.handleClick} href={this.state.images[4].href} data-value={this.state.images[4].number} />
             < Card clickHandler={this.handleClick} href={this.state.images[5].href} data-value={this.state.images[5].number} />
             < Card clickHandler={this.handleClick} href={this.state.images[6].href} data-value={this.state.images[6].number} />
             < Card clickHandler={this.handleClick} href={this.state.images[7].href} data-value={this.state.images[7].number} />
-          </Row>
-          <Row>
             < Card clickHandler={this.handleClick} href={this.state.images[8].href} data-value={this.state.images[8].number} />
             < Card clickHandler={this.handleClick} href={this.state.images[9].href} data-value={this.state.images[9].number} />
             < Card clickHandler={this.handleClick} href={this.state.images[10].href} data-value={this.state.images[10].number} />

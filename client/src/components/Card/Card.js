@@ -5,7 +5,7 @@ const Card = props => {
 
 	return(
 	<div 
-	className="cell small-3 card"
+	className="cell large-3 medium-4 small-12 card"
 	>
 	    <img 
 	    className="thumbnail image"
