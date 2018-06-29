@@ -1,6 +1,7 @@
 .card {
+	height: 170px;
 }
 
 .image {
-	height: 250px;
+	size: 100%;
 }
