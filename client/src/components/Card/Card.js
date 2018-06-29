@@ -9,7 +9,7 @@ const Card = props => {
 	>
 	    <img 
 	    className="thumbnail image"
-	    id={props.id} 
+	    data={props.data} 
 	    src={props.href}
 	    alt='fish'
 	    onClick={props.clickHandler}
