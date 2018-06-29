@@ -91,52 +91,56 @@ class App extends Component {
   handleClick = event => {
     let number = event.target.getAttribute('data');
     let pickedPics = this.state.pickedPics;
+    let currentScore = this.state.currentScore;
+    let highScore = this.state.highScore;
+    let index = pickedPics.indexOf(number);
 
     if (pickedPics.length === 0) {
-      console.log('started at zero');
-
       pickedPics.push(number);
-
       this.setState({
         pickedPics: pickedPics,
-        currentScore: this.state.currentScore + 1,
-        highScore: this.state.highScore + 1,
+        currentScore: 1,
         message: 'So far so good...',
-        images: shuffleImages(this.state.images)
+        images: shuffleImages(images)
       });
     } else {
-      console.log('has items in array');
-      console.log(pickedPics.indexOf(number));
-
-      if (pickedPics.indexOf(number) >= 0) {
-        console.log('was index of');
-
+      if (index !== -1) {
         this.setState({
           pickedPics: [],
           currentScore: 0,
           message: 'So close! Try again!',
           images: shuffleImages(images)
         });
-      } else if (pickedPics.indexOf(number) === -1) {
-        console.log('no index of');
-
+      } else if (index === -1) {
+        currentScore++;
         pickedPics.push(number);
-        this.setState({
-          pickedPics: pickedPics,
-          currentScore: this.state.currentScore + 1,
-          highScore: this.state.highscore + 1,
-          message: 'So far so good...',
-          images: shuffleImages(images)
-        });
+        if (currentScore <= highScore) {
+          this.setState({
+            pickedPics: pickedPics,
+            currentScore: currentScore,
+            message: 'So far so good...',
+            images: shuffleImages(images)
+          });
+        } else if (currentScore > highScore) {
+          this.setState({
+            pickedPics: pickedPics,
+            currentScore: currentScore,
+            highScore: currentScore,
+            message: 'So far so good...',
+            images: shuffleImages(images)
+          });
+        }
       }
-      console.log(this.state);
     }
   };
 
   render() {
     return (
       <div>
-        <Header />
+        <Header
+          highScore={this.state.highScore}
+          currentScore={this.state.currentScore}
+        />
         <Container>
           <Row>
             <Card
