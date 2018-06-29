@@ -1,32 +1,16 @@
 {
   "name": "react-memory",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd client && npm run start",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joshhedstrom/react-memory.git"
-  },
-  "keywords": [],
-  "author": "Josh Hedstrom <josh.hedstrom@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/joshhedstrom/react-memory/issues"
-  },
-  "homepage": "https://github.com/joshhedstrom/react-memory#readme",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3",
-    "morgan": "^1.9.0",
-    "path": "^0.12.7"
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
