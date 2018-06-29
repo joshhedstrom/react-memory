@@ -79,6 +79,7 @@ class App extends Component {
   }
 
   handleClick = event => {
+    console.log(this)
     this.setState({images: shuffleImages(this.state.images)})
   }
 
@@ -88,18 +89,18 @@ class App extends Component {
         < Header />
         <Container>
           <Row>
-            < Card clickHandler={this.handleClick} href={this.state.images[0].href} data-value={this.state.images[0].number} />
-            < Card clickHandler={this.handleClick} href={this.state.images[1].href} data-value={this.state.images[1].number} />
-            < Card clickHandler={this.handleClick} href={this.state.images[2].href} data-value={this.state.images[2].number} />
-            < Card clickHandler={this.handleClick} href={this.state.images[3].href} data-value={this.state.images[3].number} />
-            < Card clickHandler={this.handleClick} href={this.state.images[4].href} data-value={this.state.images[4].number} />
-            < Card clickHandler={this.handleClick} href={this.state.images[5].href} data-value={this.state.images[5].number} />
-            < Card clickHandler={this.handleClick} href={this.state.images[6].href} data-value={this.state.images[6].number} />
-            < Card clickHandler={this.handleClick} href={this.state.images[7].href} data-value={this.state.images[7].number} />
-            < Card clickHandler={this.handleClick} href={this.state.images[8].href} data-value={this.state.images[8].number} />
-            < Card clickHandler={this.handleClick} href={this.state.images[9].href} data-value={this.state.images[9].number} />
-            < Card clickHandler={this.handleClick} href={this.state.images[10].href} data-value={this.state.images[10].number} />
-            < Card clickHandler={this.handleClick} href={this.state.images[11].href} data-value={this.state.images[11].number} />
+            < Card clickHandler={this.handleClick} href={this.state.images[0].href} id={this.state.images[0].number.toString()} />
+            < Card clickHandler={this.handleClick} href={this.state.images[1].href} id={this.state.images[1].number.toString()} />
+            < Card clickHandler={this.handleClick} href={this.state.images[2].href} id={this.state.images[2].number.toString()} />
+            < Card clickHandler={this.handleClick} href={this.state.images[3].href} id={this.state.images[3].number.toString()} />
+            < Card clickHandler={this.handleClick} href={this.state.images[4].href} id={this.state.images[4].number.toString()} />
+            < Card clickHandler={this.handleClick} href={this.state.images[5].href} id={this.state.images[5].number.toString()} />
+            < Card clickHandler={this.handleClick} href={this.state.images[6].href} id={this.state.images[6].number.toString()} />
+            < Card clickHandler={this.handleClick} href={this.state.images[7].href} id={this.state.images[7].number.toString()} />
+            < Card clickHandler={this.handleClick} href={this.state.images[8].href} id={this.state.images[8].number.toString()} />
+            < Card clickHandler={this.handleClick} href={this.state.images[9].href} id={this.state.images[9].number.toString()} />
+            < Card clickHandler={this.handleClick} href={this.state.images[10].href} id={this.state.images[10].number.toString()} />
+            < Card clickHandler={this.handleClick} href={this.state.images[11].href} id={this.state.images[11].number.toString()} />
           </Row>
         </Container>
       </div>
