@@ -1,69 +1,60 @@
+import './foundation.css';
+import './App.css'
 import React, { Component } from 'react';
 import Container from './components/Container';
 import Row from './components/Row';
 import Card from './components/Card';
 import Header from './components/Header';
 // import Footer from './components/Footer';
-import './App.css';
 
 const images = [
   {
     number: 0,
-    href:
-      'https://aquariumwaterpump.files.wordpress.com/2013/05/1334240304_351784551_1-saltwater-aquarium-fish-supplies-elliot-road.jpg'
+    href: require('./assets/images/fish-1.jpg')
   },
   {
     number: 1,
-    href:
-      'http://www.aquariadise.com/wp-content/uploads/2016/09/19958060962_87277e084b_b.jpg'
+    href: require('./assets/images/fish-2.jpg')
   },
   {
     number: 2,
-    href:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcLbxfD-LkUGD58ZxoWmvid7CIhkUYNNvjyLdaM18Qf9djw4eE1Q'
+    href: require('./assets/images/fish-3.jpg')
   },
   {
     number: 3,
-    href: 'https://i.ebayimg.com/images/g/x0wAAOSwh-1W35MS/s-l300.jpg'
+    href: require('./assets/images/fish-4.jpg')
   },
   {
     number: 4,
-    href:
-      'https://5.imimg.com/data5/MH/DT/MY-46256876/albino-aquarium-fish-500x500.jpg'
+    href: require('./assets/images/fish-5.jpg')
   },
   {
     number: 5,
-    href:
-      'https://www.cve.edu.au/sites/default/files/styles/node_header/public/course/goldfish-hero.png?itok=_0MyH96i&sc=88d84b22b4062dbb8b4618860cbcb2a1'
+    href: require('./assets/images/fish-6.jpg')
   },
   {
     number: 6,
-    href:
-      'http://cdn.shopify.com/s/files/1/1044/6774/files/Clownfish_large.jpg?16639005357555961674'
+    href: require('./assets/images/fish-7.jpg')
   },
   {
     number: 7,
-    href:
-      'http://petshomey.com/wp-content/uploads/2017/09/tiger-barb-fish-5.jpg'
+    href: require('./assets/images/fish-8.jpg')
   },
   {
     number: 8,
-    href:
-      'https://s7d2.scene7.com/is/image/PetSmart/ARTHMB-HowDoISetUpMyAquariumForMultipleFish-20160818?$AR1104$'
+    href: require('./assets/images/fish-9.jpg')
   },
   {
     number: 9,
-    href: 'http://fishkeepingadvice.com/wp-content/uploads/beta-fish.jpg'
+    href: require('./assets/images/fish-10.jpg')
   },
   {
     number: 10,
-    href:
-      'https://ae01.alicdn.com/kf/HTB1mPZlKpXXXXc.XVXXq6xXFXXXp/Silicone-tropical-aquarium-fish-decor-Aquarium-noctilucent-style-fish-decoration-pattern-angelfish-aquatic-animals-for-aquarium.jpg_640x640.jpg'
+    href: require('./assets/images/fish-11.jpg')
   },
   {
     number: 11,
-    href:
-      'https://images-na.ssl-images-amazon.com/images/I/51lrd6rb78L._SX425_.jpg'
+    href: require('./assets/images/fish-12.jpg')
   }
 ];
 
