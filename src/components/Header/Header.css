@@ -1,15 +1,9 @@
 .header {
 	text-align: center;
-}
-
-.header-title {
-	/*text-align: center;*/
-}
-
-.header-instructions {
-	/*text-align: center;*/
+	font-family: cursive;
 }
 
 .score {
-	
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 }

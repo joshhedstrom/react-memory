@@ -1,6 +1,6 @@
+import React, { Component } from 'react';
 import './foundation.css';
 import './App.css';
-import React, { Component } from 'react';
 import Container from './components/Container';
 import Row from './components/Row';
 import Card from './components/Card';
@@ -71,7 +71,8 @@ class App extends Component {
     currentScore: 0,
     highScore: 0,
     pickedPics: [],
-    message: 'Click any picture to get started!',
+    message:
+      'Click on any picture, but make sure not to click on the same picture twice!',
     images: images
   };
 
