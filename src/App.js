@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './foundation.css';
 import './App.css';
+import './index.css';
 import Container from './components/Container';
 import Row from './components/Row';
 import Card from './components/Card';
