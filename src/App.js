@@ -1,11 +1,11 @@
 import './foundation.css';
-import './App.css'
+import './App.css';
 import React, { Component } from 'react';
 import Container from './components/Container';
 import Row from './components/Row';
 import Card from './components/Card';
 import Header from './components/Header';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 const images = [
   {
@@ -71,7 +71,7 @@ class App extends Component {
     currentScore: 0,
     highScore: 0,
     pickedPics: [],
-    message: '',
+    message: 'Click any picture to get started!',
     images: images
   };
 
@@ -131,6 +131,7 @@ class App extends Component {
         <Header
           highScore={this.state.highScore}
           currentScore={this.state.currentScore}
+          message={this.state.message}
         />
         <Container>
           <Row>
@@ -196,6 +197,7 @@ class App extends Component {
             />
           </Row>
         </Container>
+        <Footer />
       </div>
     );
   }

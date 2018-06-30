@@ -6,3 +6,5 @@ const Footer = () => (
 		<span> Copyright Josh Hedstrom 2018 </span>
 	</footer>
 )
+
+export default Footer;
